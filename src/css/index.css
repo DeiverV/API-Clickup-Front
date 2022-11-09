@@ -105,6 +105,18 @@ p{
     height: 100vh;
     background-color: var(--color2);
     color: var(--color1);
+    overflow: auto;
+}
+
+.comments-container::-webkit-scrollbar {
+    background-color: var(--color3);
+    width: 8px;
+    border-radius: 5px;
+}
+
+.comments-container::-webkit-scrollbar-thumb {
+    background-color: var(--color4);    
+    border-radius: 5px;
 }
 
 .comments-div{
@@ -115,6 +127,7 @@ p{
 .comment-item{
     width: 100%;
     background-color: var(--color4);
+    margin-bottom: 10%;
 }
 
 .comment-author-container{
