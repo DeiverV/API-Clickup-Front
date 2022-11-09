@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital@1&family=Inter:wght@300&display=swap');
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --color1: #232D22;
+    --color2: #B5AC80;
+    --color3: #956A55;
+    --color4: #D9D9D9;
+    --color5: #FFFFFF;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inria Serif', serif;
+    overflow: hidden;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+/*---------------------------------------------TASK STYLES*/
+
+.task-container{
+    width: 70%;
+    height: 100vh;
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.parr-white p {
+    color: var(--color5);
+}
+
+.taskInfo-container{
+    padding: 5%;
+}
+
+/*----------------------------------------------------SUBTASKS STYLES*/
+
+.subTasks-container{
+    padding: 0 5%;
+    overflow: auto;
+    height: 69vh;
+}
+
+
+.subTasks-container h4{
+    font-size: 1.5em;
+}
+
+.subTasks-container::-webkit-scrollbar {
+    background-color: var(--color3);
+    width: 8px;
+    border-radius: 5px;
+}
+
+.subTasks-container::-webkit-scrollbar-thumb {
+    background-color: var(--color4);    
+    border-radius: 5px;
+}
+
+.subtask-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.subtask-item p {
+    width: 90%;
+}
+
+.subtask-separator-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.subtask-separator-item figure{
+    height: 20px;
+    width: 20px;
+    background-color: var(--color3);
+    border-radius: 50%;
+    margin: 0;
+}
+
+.subtask-separator-item h5{
+    color: var(--color3);
+    margin: 0;
+}
+
+
+/*---------------------------------------------COMMENTS STYLES*/
+
+.comments-container{
+    width: 40%;
+    height: 100vh;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.comments-div{
+    width: 100%;
+    text-align: center;
+}
+
+.comment-item{
+    width: 100%;
+    background-color: var(--color4);
+}
+
+.comment-author-container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--color1);
+    color: #FFFFFF;
+}
+
+.comment-author-container figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 2%;
+    background-color: var(--color3);
+}
+
+.comment-item p{
+    text-align: start;
+    margin: 0;
+    word-break: break-all;
+    padding: 10px 2em;
+}
+
